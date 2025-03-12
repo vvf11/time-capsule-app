@@ -1,3 +1,4 @@
+/* Общие стили */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -10,6 +11,8 @@ body {
 
 .container {
     text-align: center;
+    max-width: 400px;
+    width: 100%;
 }
 
 .capsule {
@@ -36,4 +39,26 @@ button {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Стили для списка капсул */
+#capsuleList {
+    list-style: none;
+    padding: 0;
+}
+
+#capsuleList li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#capsuleList .status {
+    font-weight: bold;
+    color: #007BFF;
 }
