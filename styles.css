@@ -71,13 +71,13 @@ button {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding: 10px;
-    margin: 5px 0;
+    margin: 5px auto; /* Центрирование блока по горизонтали */
     border-radius: 5px;
-    text-align: center; /* Выравнивание текста по центру */
-    width: 100%; /* Занимает всю ширину родительского контейнера */
+    width: 80%; /* Фиксированная ширина блока */
+    box-sizing: border-box;
     display: flex;
-    justify-content: center; /* Центрирование содержимого по горизонтали */
-    align-items: center; /* Центрирование содержимого по вертикали */
+    flex-direction: column; /* Элементы внутри блока располагаются вертикально */
+    align-items: flex-start; /* Выравнивание текста по левому краю */
 }
 
 #openedCapsuleList img, #latestCapsuleList img {
@@ -85,8 +85,4 @@ button {
     height: 50px;
     object-fit: cover;
     margin-left: 10px;
-}
-
-#openedCapsuleList span, #latestCapsuleList span {
-    margin: 0 10px; /* Добавляем отступы вокруг текста */
 }
