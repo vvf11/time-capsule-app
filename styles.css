@@ -11,8 +11,10 @@ body {
 
 .container {
     text-align: center;
-    max-width: 400px;
+    max-width: 800px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .capsule {
@@ -25,7 +27,7 @@ form {
     flex-direction: column;
 }
 
-textarea, input[type="date"] {
+input[type="text"], textarea, input[type="date"], input[type="file"] {
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ccc;
@@ -41,13 +43,18 @@ button {
     cursor: pointer;
 }
 
-/* Стили для списка капсул */
-#capsuleList {
+/* Стили для панелей */
+.left-panel, .right-panel {
+    width: 45%;
+    margin: 20px;
+}
+
+#openedCapsuleList, #latestCapsuleList {
     list-style: none;
     padding: 0;
 }
 
-#capsuleList li {
+#openedCapsuleList li, #latestCapsuleList li {
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 10px;
@@ -56,9 +63,4 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#capsuleList .status {
-    font-weight: bold;
-    color: #007BFF;
 }
