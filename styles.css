@@ -13,14 +13,13 @@ body {
     display: flex;
     justify-content: space-between; /* Равномерное распределение панелей */
     align-items: flex-start;
-    max-width: 1200px;
-    width: 100%;
+    width: 100%; /* Занимает всю ширину экрана */
     padding: 20px;
     box-sizing: border-box;
 }
 
 .left-panel, .right-panel {
-    width: 30%; /* Ширина боковых панелей */
+    width: 37%; /* Ширина боковых панелей */
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -29,7 +28,7 @@ body {
 }
 
 .center-panel {
-    width: 35%; /* Ширина центральной панели */
+    width: 26%; /* Ширина центральной панели */
     text-align: center;
 }
 
@@ -48,6 +47,7 @@ input[type="text"], textarea, input[type="date"], input[type="file"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
 }
 
 button {
@@ -57,12 +57,14 @@ button {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
 }
 
 /* Стили для списков капсул */
 #openedCapsuleList, #latestCapsuleList {
     list-style: none;
     padding: 0;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
 }
 
 #openedCapsuleList li, #latestCapsuleList li {
@@ -74,6 +76,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
 }
 
 #openedCapsuleList img, #latestCapsuleList img {
