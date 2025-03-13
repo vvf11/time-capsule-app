@@ -71,14 +71,12 @@ button {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding: 10px;
-    margin: 5px auto; /* Центрирование блока по горизонтали */
+    margin: 5px 0;
     border-radius: 5px;
-    width: 80%; /* Фиксированная ширина блока */
-    box-sizing: border-box;
-    text-align: left; /* Текст внутри блока выравнивается по левому краю */
     display: flex;
-    flex-direction: column; /* Элементы внутри блока располагаются вертикально */
-    align-items: flex-start; /* Выравнивание текста по левому краю */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
 }
 
 #openedCapsuleList img, #latestCapsuleList img {
