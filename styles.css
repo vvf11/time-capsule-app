@@ -74,9 +74,10 @@ button {
     margin: 5px 0;
     border-radius: 5px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    align-items: center; /* Центрирование содержимого по вертикали */
     width: 100%; /* Занимает всю ширину родительского контейнера */
+    flex-wrap: wrap; /* Разрешаем перенос строк при необходимости */
 }
 
 #openedCapsuleList img, #latestCapsuleList img {
@@ -84,4 +85,8 @@ button {
     height: 50px;
     object-fit: cover;
     margin-left: 10px;
+}
+
+#openedCapsuleList span, #latestCapsuleList span {
+    margin: 0 10px; /* Добавляем отступы вокруг текста */
 }
