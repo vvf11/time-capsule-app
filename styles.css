@@ -97,11 +97,13 @@ button {
     align-items: center;
     word-wrap: break-word; /* Разрешаем перенос слов */
     flex-wrap: wrap; /* Разрешаем перенос строк */
+    max-width: 100%; /* Ограничиваем ширину */
 }
 
 #openedCapsuleList span, #latestCapsuleList span {
     flex: 1; /* Позволяет элементам занимать доступное пространство */
     margin: 0 10px;
+    white-space: normal; /* Разрешаем перенос строк внутри текста */
 }
 
 #openedCapsuleList img, #latestCapsuleList img {
