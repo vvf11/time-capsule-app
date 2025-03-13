@@ -3,30 +3,34 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
     display: flex;
     justify-content: space-between; /* Равномерное распределение панелей */
     align-items: flex-start;
-    padding: 20px; /* Отступы от краев экрана */
     max-width: 1200px;
-    margin: 0 auto; /* Центрирование контейнера на странице */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .left-panel, .right-panel {
-    width: 25%; /* Ширина боковых панелей */
+    width: 30%; /* Ширина боковых панелей */
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 20px; /* Внутренние отступы внутри панелей */
+    padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .center-panel {
-    width: 40%; /* Ширина центральной панели */
+    width: 35%; /* Ширина центральной панели */
     text-align: center;
-    margin: 0 20px; /* Отступы между центральной и боковыми панелями */
 }
 
 .capsule {
