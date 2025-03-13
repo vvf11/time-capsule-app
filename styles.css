@@ -7,25 +7,26 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Равномерное распределение панелей */
     align-items: flex-start;
-    padding: 20px;
+    padding: 20px; /* Отступы от краев экрана */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Центрирование контейнера на странице */
 }
 
 .left-panel, .right-panel {
-    width: 25%;
+    width: 25%; /* Ширина боковых панелей */
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px; /* Внутренние отступы внутри панелей */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .center-panel {
-    width: 45%;
+    width: 40%; /* Ширина центральной панели */
     text-align: center;
+    margin: 0 20px; /* Отступы между центральной и боковыми панелями */
 }
 
 .capsule {
