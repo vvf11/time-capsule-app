@@ -2,12 +2,11 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #0a0a23; /* Темный фон для контраста */
+    background-color: #f0f0f0; /* Сохраняем фон как был */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: white; /* Белый текст для контраста */
 }
 
 .container {
@@ -22,7 +21,8 @@ body {
 
 .left-panel, .center-panel, .right-panel {
     width: 26%; /* Ширина каждой панели */
-    background-color: #1f1f47; /* Темно-синий цвет фона */
+    background-color: #fff; /* Белый фон панелей */
+    border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 
@@ -51,10 +51,10 @@ form {
 input[type="text"], textarea, input[type="date"], input[type="file"] {
     margin: 10px 0;
     padding: 10px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #1f1f47;
-    color: white;
+    background-color: #fff; /* Белый фон полей ввода */
+    color: black; /* Черный текст */
     box-shadow: 
         0 0 5px #ff69b4, /* Неоновое свечение для полей ввода */
         0 0 10px #ff69b4,
@@ -64,7 +64,7 @@ input[type="text"], textarea, input[type="date"], input[type="file"] {
 button {
     padding: 10px;
     border: none;
-    background-color: #ff69b4;
+    background-color: #007BFF;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -83,12 +83,12 @@ button {
 }
 
 #openedCapsuleList li, #latestCapsuleList li {
-    background-color: #1f1f47;
-    border: none;
+    background-color: #f9f9f9; /* Светло-серый фон элементов списка */
+    border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
     margin: 5px 0;
-    color: white;
+    color: black; /* Черный текст */
     box-shadow: 
         0 0 5px #ff69b4, /* Неоновое свечение для элементов списка */
         0 0 10px #ff69b4,
