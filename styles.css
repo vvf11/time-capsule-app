@@ -26,6 +26,9 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование содержимого по горизонтали */
 }
 
 .center-panel {
@@ -48,6 +51,7 @@ input[type="text"], textarea, input[type="date"], input[type="file"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
 }
 
 button {
@@ -57,12 +61,15 @@ button {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
 }
 
 /* Стили для списков капсул */
 #openedCapsuleList, #latestCapsuleList {
     list-style: none;
     padding: 0;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
+    text-align: left; /* Выравнивание текста по левому краю */
 }
 
 #openedCapsuleList li, #latestCapsuleList li {
@@ -74,6 +81,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
 }
 
 #openedCapsuleList img, #latestCapsuleList img {
