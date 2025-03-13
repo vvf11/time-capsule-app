@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const openedCapsuleList = document.getElementById('openedCapsuleList');
     const latestCapsuleList = document.getElementById('latestCapsuleList');
 
+    // Установка минимальной даты для поля выбора даты
+    const unlockDateInput = document.getElementById('unlockDate');
+    const today = new Date().toISOString().split('T')[0]; // Текущая дата в формате YYYY-MM-DD
+    unlockDateInput.setAttribute('min', today);
+
     // Загрузка капсул из localStorage при загрузке страницы
     loadCapsules();
 
