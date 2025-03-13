@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const title = document.getElementById('title').value.trim();
         const message = document.getElementById('message').value.trim();
         const unlockDate = document.getElementById('unlockDate').value;
+
+        if (!title || !message || !unlockDate) {
+            alert('Please fill in all fields: Title, Message, and Unlock Date.');
+            return;
+        }
+
         const imageInput = document.getElementById('image');
         let imageUrl = '';
 
