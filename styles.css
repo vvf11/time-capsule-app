@@ -95,6 +95,13 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    word-wrap: break-word; /* Разрешаем перенос слов */
+    flex-wrap: wrap; /* Разрешаем перенос строк */
+}
+
+#openedCapsuleList span, #latestCapsuleList span {
+    flex: 1; /* Позволяет элементам занимать доступное пространство */
+    margin: 0 10px;
 }
 
 #openedCapsuleList img, #latestCapsuleList img {
