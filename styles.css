@@ -106,6 +106,7 @@ button {
     display: block; /* Для правильного выравнивания */
     line-height: 1.5; /* Увеличение высоты строки для лучшего отображения */
     overflow-wrap: break-word; /* Перенос длинных слов */
+    max-width: calc(100% - 40px); /* Ограничиваем ширину, учитывая отступы */
 }
 
 #openedCapsuleList img, #latestCapsuleList img {
