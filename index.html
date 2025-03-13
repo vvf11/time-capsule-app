@@ -8,22 +8,25 @@
 </head>
 <body>
     <div class="container">
-        <img src="capsule.png" alt="Time Capsule" class="capsule">
-        <form id="timeCapsuleForm">
-            <input type="text" id="title" placeholder="Title...">
-            <textarea id="message" placeholder="Write your message..."></textarea>
-            <input type="date" id="unlockDate">
-            <input type="file" id="image" accept="image/*">
-            <button type="submit">Seal Time Capsule</button>
-        </form>
-
-        <!-- Список автоматически открывшихся капсул -->
+        <!-- Левая панель: Открытые капсулы -->
         <div class="left-panel">
             <h3>Opened Time Capsules</h3>
             <ul id="openedCapsuleList"></ul>
         </div>
 
-        <!-- Список последних созданных капсул -->
+        <!-- Центральная часть: Форма для создания капсулы -->
+        <div class="center-panel">
+            <img src="capsule.png" alt="Time Capsule" class="capsule">
+            <form id="timeCapsuleForm">
+                <input type="text" id="title" placeholder="Title...">
+                <textarea id="message" placeholder="Write your message..."></textarea>
+                <input type="date" id="unlockDate">
+                <input type="file" id="image" accept="image/*">
+                <button type="submit">Seal Time Capsule</button>
+            </form>
+        </div>
+
+        <!-- Правая панель: Последние созданные капсулы -->
         <div class="right-panel">
             <h3>Latest Created Time Capsules</h3>
             <ul id="latestCapsuleList"></ul>
