@@ -104,6 +104,7 @@ button {
     margin: 0 10px;
     white-space: normal; /* Разрешаем перенос строк внутри текста */
     display: inline-block; /* Для правильного выравнивания */
+    line-height: 1.5; /* Увеличение высоты строки для лучшего отображения */
 }
 
 #openedCapsuleList img, #latestCapsuleList img {
