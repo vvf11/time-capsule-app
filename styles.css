@@ -2,11 +2,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #0a0a23; /* Темный фон для контраста */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: white; /* Белый текст для контраста */
 }
 
 .container {
@@ -21,11 +22,16 @@ body {
 
 .left-panel, .center-panel, .right-panel {
     width: 26%; /* Ширина каждой панели */
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #1f1f47; /* Темно-синий цвет фона */
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 
+        0 0 5px #ff69b4, /* Основное свечение */
+        0 0 10px #ff69b4,
+        0 0 20px #ff69b4,
+        0 0 40px #ff69b4; /* Более широкое свечение */
+    position: relative;
+    overflow: hidden;
 }
 
 .center-panel {
@@ -45,18 +51,28 @@ form {
 input[type="text"], textarea, input[type="date"], input[type="file"] {
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
+    background-color: #1f1f47;
+    color: white;
+    box-shadow: 
+        0 0 5px #ff69b4, /* Неоновое свечение для полей ввода */
+        0 0 10px #ff69b4,
+        0 0 15px #ff69b4;
 }
 
 button {
     padding: 10px;
     border: none;
-    background-color: #007BFF;
+    background-color: #ff69b4;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     width: 100%; /* Занимает всю ширину родительского контейнера */
+    box-shadow: 
+        0 0 5px #ff69b4, /* Неоновое свечение для кнопки */
+        0 0 10px #ff69b4,
+        0 0 15px #ff69b4;
 }
 
 /* Стили для списков капсул */
@@ -67,15 +83,20 @@ button {
 }
 
 #openedCapsuleList li, #latestCapsuleList li {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #1f1f47;
+    border: none;
+    border-radius: 5px;
     padding: 10px;
     margin: 5px 0;
-    border-radius: 5px;
+    color: white;
+    box-shadow: 
+        0 0 5px #ff69b4, /* Неоновое свечение для элементов списка */
+        0 0 10px #ff69b4,
+        0 0 15px #ff69b4;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
+}
 
 #openedCapsuleList img, #latestCapsuleList img {
     width: 50px;
