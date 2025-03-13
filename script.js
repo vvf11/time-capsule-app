@@ -23,16 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if (title.length > 15) {
-            alert('Title must be no more than 15 characters.');
-            return;
-        }
-
-        if (message.length > 300) {
-            alert('Message must be no more than 300 characters.');
-            return;
-        }
-
         const imageInput = document.getElementById('image');
         let imageUrl = '';
 
