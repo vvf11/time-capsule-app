@@ -75,6 +75,7 @@ button {
     border-radius: 5px;
     width: 80%; /* Фиксированная ширина блока */
     box-sizing: border-box;
+    text-align: left; /* Текст внутри блока выравнивается по левому краю */
     display: flex;
     flex-direction: column; /* Элементы внутри блока располагаются вертикально */
     align-items: flex-start; /* Выравнивание текста по левому краю */
