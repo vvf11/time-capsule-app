@@ -10,14 +10,24 @@
     <div class="container">
         <img src="capsule.png" alt="Time Capsule" class="capsule">
         <form id="timeCapsuleForm">
+            <input type="text" id="title" placeholder="Title...">
             <textarea id="message" placeholder="Write your message..."></textarea>
             <input type="date" id="unlockDate">
+            <input type="file" id="image" accept="image/*">
             <button type="submit">Seal Time Capsule</button>
         </form>
 
-        <!-- Список капсул -->
-        <h3>Your Time Capsules</h3>
-        <ul id="capsuleList"></ul>
+        <!-- Список автоматически открывшихся капсул -->
+        <div class="left-panel">
+            <h3>Opened Time Capsules</h3>
+            <ul id="openedCapsuleList"></ul>
+        </div>
+
+        <!-- Список последних созданных капсул -->
+        <div class="right-panel">
+            <h3>Latest Created Time Capsules</h3>
+            <ul id="latestCapsuleList"></ul>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
