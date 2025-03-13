@@ -1,20 +1,31 @@
 /* Общие стили */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
 }
 
 .container {
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-panel, .right-panel {
+    width: 25%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.center-panel {
+    width: 45%;
+    text-align: center;
 }
 
 .capsule {
@@ -43,24 +54,26 @@ button {
     cursor: pointer;
 }
 
-/* Стили для панелей */
-.left-panel, .right-panel {
-    width: 45%;
-    margin: 20px;
-}
-
+/* Стили для списков капсул */
 #openedCapsuleList, #latestCapsuleList {
     list-style: none;
     padding: 0;
 }
 
 #openedCapsuleList li, #latestCapsuleList li {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#openedCapsuleList img, #latestCapsuleList img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-left: 10px;
 }
