@@ -103,8 +103,9 @@ button {
     flex: 1; /* Позволяет элементам занимать доступное пространство */
     margin: 0 10px;
     white-space: normal; /* Разрешаем перенос строк внутри текста */
-    display: inline-block; /* Для правильного выравнивания */
+    display: block; /* Для правильного выравнивания */
     line-height: 1.5; /* Увеличение высоты строки для лучшего отображения */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 #openedCapsuleList img, #latestCapsuleList img {
@@ -112,29 +113,4 @@ button {
     height: 50px;
     object-fit: cover;
     margin-left: 10px;
-}
-
-/* Стили для кнопки выбора файла */
-#image {
-    display: none;
-}
-
-.custom-file-input {
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    color: black;
-    box-shadow: 
-        0 0 3px #ff69b4,
-        0 0 6px #ff69b4,
-        0 0 9px #ff69b4;
-    cursor: pointer;
-}
-
-.custom-file-input::after {
-    content: 'Choose file';
-    display: inline-block;
-    padding: 10px;
 }
