@@ -113,3 +113,28 @@ button {
     object-fit: cover;
     margin-left: 10px;
 }
+
+/* Стили для кнопки выбора файла */
+#image {
+    display: none;
+}
+
+.custom-file-input {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    box-shadow: 
+        0 0 3px #ff69b4,
+        0 0 6px #ff69b4,
+        0 0 9px #ff69b4;
+    cursor: pointer;
+}
+
+.custom-file-input::after {
+    content: 'Choose file';
+    display: inline-block;
+    padding: 10px;
+}
