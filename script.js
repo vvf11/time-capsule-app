@@ -100,4 +100,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Обработчик для кнопки выбора файла
+    const customFileInput = document.createElement('label');
+    customFileInput.className = 'custom-file-input';
+    customFileInput.htmlFor = 'image';
+    customFileInput.textContent = 'Choose file';
+
+    const imageInput = document.getElementById('image');
+    imageInput.parentNode.insertBefore(customFileInput, imageInput.nextSibling);
+
+    customFileInput.addEventListener('click', () => {
+        imageInput.click();
+    });
+
+    imageInput.addEventListener('change', () => {
+        customFileInput.textContent = imageInput.files[0] ? imageInput.files[0].name : 'Choose file';
+    });
 });
