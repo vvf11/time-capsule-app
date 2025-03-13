@@ -26,10 +26,9 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 
-        0 0 5px #ff69b4, /* Основное свечение */
-        0 0 10px #ff69b4,
-        0 0 20px #ff69b4,
-        0 0 40px #ff69b4; /* Более широкое свечение */
+        0 0 3px #ff69b4, /* Уменьшенное свечение */
+        0 0 6px #ff69b4,
+        0 0 9px #ff69b4;
     position: relative;
     overflow: hidden;
 }
@@ -56,9 +55,9 @@ input[type="text"], textarea, input[type="date"], input[type="file"] {
     background-color: #fff; /* Белый фон полей ввода */
     color: black; /* Черный текст */
     box-shadow: 
-        0 0 5px #ff69b4, /* Неоновое свечение для полей ввода */
-        0 0 10px #ff69b4,
-        0 0 15px #ff69b4;
+        0 0 3px #ff69b4, /* Уменьшенное свечение для полей ввода */
+        0 0 6px #ff69b4,
+        0 0 9px #ff69b4;
 }
 
 button {
@@ -70,9 +69,9 @@ button {
     cursor: pointer;
     width: 100%; /* Занимает всю ширину родительского контейнера */
     box-shadow: 
-        0 0 5px #ff69b4, /* Неоновое свечение для кнопки */
-        0 0 10px #ff69b4,
-        0 0 15px #ff69b4;
+        0 0 3px #ff69b4, /* Уменьшенное свечение для кнопки */
+        0 0 6px #ff69b4,
+        0 0 9px #ff69b4;
 }
 
 /* Стили для списков капсул */
@@ -90,9 +89,9 @@ button {
     margin: 5px 0;
     color: black; /* Черный текст */
     box-shadow: 
-        0 0 5px #ff69b4, /* Неоновое свечение для элементов списка */
-        0 0 10px #ff69b4,
-        0 0 15px #ff69b4;
+        0 0 3px #ff69b4, /* Уменьшенное свечение для элементов списка */
+        0 0 6px #ff69b4,
+        0 0 9px #ff69b4;
     display: flex;
     justify-content: space-between;
     align-items: center;
