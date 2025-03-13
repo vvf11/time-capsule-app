@@ -93,7 +93,6 @@ button {
         0 0 6px #ff69b4,
         0 0 9px #ff69b4;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     word-wrap: break-word; /* Разрешаем перенос слов */
     flex-wrap: wrap; /* Разрешаем перенос строк */
@@ -104,6 +103,7 @@ button {
     flex: 1; /* Позволяет элементам занимать доступное пространство */
     margin: 0 10px;
     white-space: normal; /* Разрешаем перенос строк внутри текста */
+    display: inline-block; /* Для правильного выравнивания */
 }
 
 #openedCapsuleList img, #latestCapsuleList img {
