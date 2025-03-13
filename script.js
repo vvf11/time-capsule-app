@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const unlockDateInput = document.getElementById('unlockDate');
     const today = new Date().toISOString().split('T')[0]; // Текущая дата в формате YYYY-MM-DD
     unlockDateInput.setAttribute('min', today);
+    unlockDateInput.setAttribute('lang', 'en'); // Устанавливаем язык для календаря
 
     // Загрузка капсул из localStorage при загрузке страницы
     loadCapsules();
